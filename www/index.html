@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ncmb-latest.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cssua.min.js"></script>
+</head>
+
+<body>
+  <!-- ログインページ -->
+  <div data-role="page" id="LoginPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>アプリデモ</h1>
+    </header>
+    <section data-role="content">
+      <h1>ログイン</h1>
+      ユーザ名
+        <input type="text" id="login_username">
+      パスワード
+        <input type="password" id="login_password">
+      新規登録？
+      <a href="#RgisterPage" data-role="button" data-mini="true" data-inline="true" data-theme="b">登録</a>
+      <a href="#" id="LoginBtn" data-role="button" data-inline="false" data-theme="b">ログインする</a>
+    </section>
+  </div>
+    
+  <!-- 登録ページ -->
+  <div data-role="page" id="RegisterPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>アプリデモ</h1>
+    </header>
+    <section>
+      <h1>新規登録</h1>
+      ユーザ名
+        <input type="text" id="reg_username"/>
+      パスワード
+        <input type="password" id="reg_password"/>
+        <a href="#" id="RegisterBtn" data-role="button" data-inline="false" data-theme="b">登録する</a>
+        <a href="#LoginPage" data-role="button" data-ini="true" data-inline="true" data-theme="b">戻る</a>
+    </section>  
+</body>
+
+</html>
